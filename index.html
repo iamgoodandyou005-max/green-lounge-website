@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Green Lounge Rooftop Restaurant &amp; Convention Hall | Chhagalnaiya</title>
+  <meta name="description" content="Green Lounge is a rooftop restaurant and convention hall in Chhagalnaiya, Bangladesh. Browse the full menu, reserve a table, or contact us on WhatsApp. Open daily 9:00 AM – 11:00 PM.">
+  <meta name="theme-color" content="#073527">
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Green Lounge Rooftop Restaurant &amp; Convention Hall">
+  <meta property="og:title" content="Green Lounge Rooftop Restaurant &amp; Convention Hall | Chhagalnaiya">
+  <meta property="og:description" content="Good food, rooftop evenings and memorable gatherings in Chhagalnaiya. Full menu, reservations and dining. Open daily 9:00 AM – 11:00 PM.">
+  <meta property="og:locale" content="en_BD">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Green Lounge Rooftop Restaurant &amp; Convention Hall | Chhagalnaiya">
+  <meta name="twitter:description" content="Rooftop restaurant and convention hall in Chhagalnaiya, Bangladesh. Menu, reservations and dining.">
+
+  <!-- SEO: fill these in when the site has its live domain, then remove the comments.
+       1) Canonical URL (also add og:url with the same value):
+          <link rel="canonical" href="https://YOUR-DOMAIN/">
+          <meta property="og:url" content="https://YOUR-DOMAIN/">
+       2) Social sharing image (1200x630 recommended; a photo of the rooftop or a Dala platter works well):
+          <meta property="og:image" content="https://YOUR-DOMAIN/images/social-share.jpg">
+          <meta name="twitter:image" content="https://YOUR-DOMAIN/images/social-share.jpg">
+          (also change twitter:card above to "summary_large_image")
+       3) robots.txt — create a file named robots.txt next to index.html containing:
+            User-agent: *
+            Allow: /
+            Sitemap: https://YOUR-DOMAIN/sitemap.xml
+       4) sitemap.xml — for this one-page site a minimal file is enough:
+            <?xml version="1.0" encoding="UTF-8"?>
+            <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+              <url><loc>https://YOUR-DOMAIN/</loc></url>
+            </urlset> -->
+
+  <!-- Favicon: the Green Lounge logo -->
+  <link rel="icon" href="images/logo/green-lounge-logo.png">
+
+  <!-- Fonts: Young Serif (headings), Figtree (text), Hind Siliguri (Bangla) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Hind+Siliguri:wght@400;500;600;700&family=Young+Serif&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Privacy-notice link styling (reuses existing design tokens; kept here because style.css is managed separately) -->
+  <style>
+    .form-privacy { margin-top: -.1rem; }
+    .form-privacy a { color: var(--forest-700); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+    .form-privacy a:hover { color: var(--forest-800); }
+  </style>
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- Structured data for search engines (only facts supplied by the business) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Green Lounge Rooftop Restaurant & Convention Hall",
+    "telephone": "+8801919886077",
+    "email": "greenlounge380@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Chhagalnaiya",
+      "postalCode": "3910",
+      "addressCountry": "BD"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "09:00",
+      "closes": "23:00"
+    }],
+    "sameAs": [
+      "https://www.facebook.com/greenloungechhagalnaiya",
+      "https://www.instagram.com/greenlounge380/"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- =====================================================
+       ICON + ARTWORK SPRITE (used everywhere with <use href="#...">)
+       ===================================================== -->
+  <svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <symbol id="logo-mark" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="31" fill="#0a4a37" stroke="#efd24a" stroke-width="2"/>
+      <path d="M20 44C20 28 32 16 46 16C46 30 40 44 24 46Z" fill="#efd24a"/>
+      <path d="M22 44L40 22" stroke="#0a4a37" stroke-width="2" stroke-linecap="round" fill="none"/>
+    </symbol>
+
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="m22 6-10 7L2 6"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35m-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.17-3.48-8.41z"/></symbol>
+    <symbol id="i-utensils" viewBox="0 0 24 24"><path d="M7 3v7a2 2 0 0 0 2 2v9"/><path d="M11 3v7a2 2 0 0 1-2 2"/><path d="M9 3v5"/><path d="M18 21V3c-2.2 1-3.5 4-3.5 8 0 1.6 1.2 2.5 3.5 2.5"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-directions" viewBox="0 0 24 24"><path d="m3 11 19-9-9 19-2-8-8-2z"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></symbol>
+
+    <!-- Rooftop skyline artwork used in the hero and the rooftop section -->
+    <symbol id="scene-skyline" viewBox="0 0 1440 360" preserveAspectRatio="xMidYMax slice">
+      <path d="M-20 271h70v89h-70zM56 284h91v76h-91zM148 222h102v138h-102zM251 216h73v144h-73zM324 226h108v134h-108zM435 279h52v81h-52zM493 282h76v78h-76zM572 220h55v140h-55zM633 218h53v142h-53zM687 262h110v98h-110zM807 216h90v144h-90zM897 216h86v144h-86zM989 262h53v98h-53zM1042 273h85v87h-85zM1131 272h76v88h-76zM1215 217h57v143h-57zM1276 203h85v157h-85zM1363 216h56v144h-56zM1428 266h90v94h-90z" fill="#0d5a41" opacity=".5"/>
+      <path d="M-20 190h66v170h-66zM51 188h64v172h-64zM115 234h99v126h-99zM217 192h103v168h-103zM323 220h109v140h-109zM435 202h97v158h-97zM534 229h79v131h-79zM619 171h71v189h-71zM696 250h75v110h-75zM775 193h79v167h-79zM857 217h116v143h-116zM978 224h88v136h-88zM1070 245h64v115h-64zM1138 239h86v121h-86zM1230 241h81v119h-81zM1314 255h86v105h-86zM1405 163h64v197h-64z" fill="#0a4a37" opacity=".85"/>
+      <path d="M-20 119h143v241h-143zM137 132h113v228h-113zM265 157h146v203h-146zM433 212h128v148h-128zM567 160h104v200h-104zM677 127h77v233h-77zM767 133h143v227h-143zM928 129h106v231h-106zM1050 218h114v142h-114zM1182 199h115v161h-115zM1304 213h133v147h-133zM1447 204h106v156h-106z" fill="#052a1e"/>
+      <path d="M80 195h6v9h-6zM36 225h6v9h-6zM-8 285h6v9h-6zM149 238h6v9h-6zM193 238h6v9h-6zM215 268h6v9h-6zM321 173h6v9h-6zM299 293h6v9h-6zM601 296h6v9h-6zM623 296h6v9h-6zM711 203h6v9h-6zM689 293h6v9h-6zM779 179h6v9h-6zM779 209h6v9h-6zM845 209h6v9h-6zM845 269h6v9h-6zM801 299h6v9h-6zM984 145h6v9h-6zM940 235h6v9h-6zM1084 294h6v9h-6zM1106 294h6v9h-6zM1194 245h6v9h-6zM1238 245h6v9h-6zM1260 245h6v9h-6zM1216 275h6v9h-6zM1260 275h6v9h-6zM1481 250h6v9h-6z" fill="#efd24a" opacity=".8"/>
+      <rect y="300" width="1440" height="9" fill="#031a12"/>
+      <rect y="309" width="1440" height="51" fill="#04231a"/>
+      <path d="M4 309h6v51h-6zM26 309h6v51h-6zM48 309h6v51h-6zM70 309h6v51h-6zM92 309h6v51h-6zM114 309h6v51h-6zM136 309h6v51h-6zM158 309h6v51h-6zM180 309h6v51h-6zM202 309h6v51h-6zM224 309h6v51h-6zM246 309h6v51h-6zM268 309h6v51h-6zM290 309h6v51h-6zM312 309h6v51h-6zM334 309h6v51h-6zM356 309h6v51h-6zM378 309h6v51h-6zM400 309h6v51h-6zM422 309h6v51h-6zM444 309h6v51h-6zM466 309h6v51h-6zM488 309h6v51h-6zM510 309h6v51h-6zM532 309h6v51h-6zM554 309h6v51h-6zM576 309h6v51h-6zM598 309h6v51h-6zM620 309h6v51h-6zM642 309h6v51h-6zM664 309h6v51h-6zM686 309h6v51h-6zM708 309h6v51h-6zM730 309h6v51h-6zM752 309h6v51h-6zM774 309h6v51h-6zM796 309h6v51h-6zM818 309h6v51h-6zM840 309h6v51h-6zM862 309h6v51h-6zM884 309h6v51h-6zM906 309h6v51h-6zM928 309h6v51h-6zM950 309h6v51h-6zM972 309h6v51h-6zM994 309h6v51h-6zM1016 309h6v51h-6zM1038 309h6v51h-6zM1060 309h6v51h-6zM1082 309h6v51h-6zM1104 309h6v51h-6zM1126 309h6v51h-6zM1148 309h6v51h-6zM1170 309h6v51h-6zM1192 309h6v51h-6zM1214 309h6v51h-6zM1236 309h6v51h-6zM1258 309h6v51h-6zM1280 309h6v51h-6zM1302 309h6v51h-6zM1324 309h6v51h-6zM1346 309h6v51h-6zM1368 309h6v51h-6zM1390 309h6v51h-6zM1412 309h6v51h-6zM1434 309h6v51h-6z" fill="#031a12"/>
+    </symbol>
+  </svg>
+
+
+  <!-- =====================================================
+       HEADER
+       ===================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="site-header__inner">
+      <a class="brand" href="#home" aria-label="Green Lounge Rooftop Restaurant and Convention Hall, home">
+        <img class="brand__mark" src="images/logo/green-lounge-logo-transparent.png" alt="Green Lounge logo" width="38" height="38" decoding="async">
+        <span class="brand__text">
+          <span class="brand__name">Green Lounge</span>
+          <span class="brand__sub">Rooftop Restaurant &amp; Convention Hall</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="primaryNav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a href="#home" data-nav="home">Home</a></li>
+          <li><a href="#menu" data-nav="menu">Menu</a></li>
+          <li><a href="#about" data-nav="about">About</a></li>
+          <li><a href="#gallery" data-nav="gallery">Gallery</a></li>
+          <li><a href="#reservations" data-nav="reservations">Reservations</a></li>
+          <li><a href="#contact" data-nav="contact">Contact</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a class="btn btn--gold btn--lg" href="#reservations">Reserve a Table</a>
+          <a class="btn btn--ghost btn--lg" href="https://wa.me/8801919886077" target="_blank" rel="noopener">
+            <svg class="icon icon--fill" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg>
+            WhatsApp us
+          </a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a class="icon-btn header-wa" href="https://wa.me/8801919886077" target="_blank" rel="noopener" aria-label="Message Green Lounge on WhatsApp">
+          <svg class="icon icon--fill" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg>
+        </a>
+        <a class="btn btn--gold btn--sm header-cta" href="#reservations">Reserve a Table</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+          <svg class="icon nav-toggle__open" aria-hidden="true" focusable="false"><use href="#i-menu"/></svg>
+          <svg class="icon nav-toggle__close" aria-hidden="true" focusable="false"><use href="#i-close"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+  <main id="main">
+
+    <!-- =====================================================
+         HOME VIEW  (everything except the full menu)
+         ===================================================== -->
+    <div id="homeView">
+
+      <!-- HERO -->
+      <section class="hero" id="home" aria-labelledby="heroTitle">
+        <div class="hero__bg" aria-hidden="true">
+          <div class="hero__pattern"></div>
+          <span class="hero__moon"></span>
+          <svg class="hero__scene" focusable="false"><use href="#scene-skyline"/></svg>
+          <div class="hero__shade"></div>
+        </div>
+
+        <div class="container hero__inner">
+          <p class="hero__place">
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg>
+            Chhagalnaiya, Bangladesh
+          </p>
+          <h1 class="hero__title" id="heroTitle">Green Lounge</h1>
+          <p class="hero__subtitle">Rooftop Restaurant &amp; Convention Hall</p>
+          <p class="hero__lead">Good food, rooftop evenings, and memorable gatherings in Chhagalnaiya.</p>
+          <div class="hero__cta">
+            <a class="btn btn--gold btn--lg" href="#reservations">Reserve a Table</a>
+            <a class="btn btn--ghost btn--lg" href="#menu">Explore Menu</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUICK INFO STRIP -->
+      <section class="info-strip" aria-label="Opening hours, services, location and phone">
+        <div class="container">
+          <div class="info-strip__card">
+            <div class="info-cell">
+              <span class="info-cell__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg></span>
+              <div>
+                <p class="info-cell__label">Open daily</p>
+                <p class="info-cell__value">9:00 AM – 11:00 PM</p>
+              </div>
+            </div>
+            <div class="info-cell">
+              <span class="info-cell__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-utensils"/></svg></span>
+              <div>
+                <p class="info-cell__label">Services</p>
+                <ul class="info-cell__list">
+                  <li>Dine-in</li>
+                  <li>Takeout</li>
+                  <li>Reservations</li>
+                </ul>
+              </div>
+            </div>
+            <div class="info-cell">
+              <span class="info-cell__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg></span>
+              <div>
+                <p class="info-cell__label">Location</p>
+                <p class="info-cell__value">Chhagalnaiya</p>
+              </div>
+            </div>
+            <div class="info-cell">
+              <span class="info-cell__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg></span>
+              <div>
+                <p class="info-cell__label">Phone</p>
+                <p class="info-cell__value"><a href="tel:+8801919886077">01919-886077</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MENU HIGHLIGHTS (cards are built by script.js from the real menu data) -->
+      <section class="section highlights" id="highlights" aria-labelledby="highlightsTitle">
+        <div class="container">
+          <div class="section-head">
+            <div class="section-head__text">
+              <h2 class="h2" id="highlightsTitle">Menu highlights</h2>
+              <p class="lead">A few dishes from the Green Lounge menu, at the prices printed on our current menu. The full menu has every category.</p>
+            </div>
+            <a class="btn btn--outline" href="#menu">View full menu</a>
+          </div>
+          <div class="dish-grid" id="highlightGrid"></div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section about" id="about" aria-labelledby="aboutTitle">
+        <div class="container about__grid">
+          <div class="about__text">
+            <h2 class="h2" id="aboutTitle">A rooftop restaurant and convention hall in Chhagalnaiya</h2>
+            <p>Green Lounge is a rooftop restaurant in Chhagalnaiya, Bangladesh. Come for a meal with family or friends, ask for takeout, or reserve a table before you visit.</p>
+            <p>The menu runs from Dala platters and Bangla food to biryani, grills, burgers, pizza, pasta, chowmein, seafood, shakes and coffee, with Bangla and English names side by side.</p>
+            <p>Green Lounge is also a convention hall, for programs, seminars, gatherings and celebrations.</p>
+            <ul class="service-list" aria-label="What Green Lounge offers">
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Dine-in</li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Takeout</li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Reservations</li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Convention hall</li>
+            </ul>
+          </div>
+
+          <div class="about__visual reveal" id="aboutVisual"></div>
+        </div>
+      </section>
+
+      <!-- ROOFTOP -->
+      <section class="section rooftop dark" id="rooftop" aria-labelledby="rooftopTitle">
+        <div class="container rooftop__grid">
+          <div class="rooftop__frame reveal" id="rooftopFrame">
+            <span class="rooftop__moon" aria-hidden="true"></span>
+            <svg aria-hidden="true" focusable="false"><use href="#scene-skyline"/></svg>
+          </div>
+
+          <div class="rooftop__text">
+            <h2 class="h2" id="rooftopTitle">Rooftop dining, made for evenings together</h2>
+            <p class="lead">Green Lounge puts the meal up on the rooftop. Sit down with family or friends, or bring a bigger group around the table.</p>
+            <div class="facts">
+              <div class="fact">
+                <p class="fact__title">Open every day</p>
+                <p class="fact__text">9:00 AM to 11:00 PM.</p>
+              </div>
+              <div class="fact">
+                <p class="fact__title">Dine-in and takeout</p>
+                <p class="fact__text">Eat with us or take your meal away.</p>
+              </div>
+              <div class="fact">
+                <p class="fact__title">Reservations</p>
+                <p class="fact__text">Request a table before your visit.</p>
+              </div>
+              <div class="fact">
+                <p class="fact__title">Dala platters</p>
+                <p class="fact__text">The Dala menu serves 2 or 4 people.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONVENTION HALL -->
+      <section class="section convention" id="convention" aria-labelledby="conventionTitle">
+        <div class="container convention__grid">
+          <div class="convention__text">
+            <h2 class="h2" id="conventionTitle">Convention hall</h2>
+            <p class="lead">Green Lounge is also a convention hall in Chhagalnaiya. Planning a program, a seminar or a celebration? Message us to ask about reservations.</p>
+            <div class="convention__cta">
+              <a class="btn btn--forest btn--lg" id="conventionAsk" target="_blank" rel="noopener"
+                 href="https://wa.me/8801919886077?text=Hello%20Green%20Lounge%2C%20I%27d%20like%20to%20ask%20about%20reserving%20the%20convention%20hall.">
+                <svg class="icon icon--fill" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg>
+                Ask About Reservations
+              </a>
+              <a class="btn btn--outline btn--lg" href="tel:+8801919886077">
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg>
+                Call 01919-886077
+              </a>
+            </div>
+            <p class="fine">Details for the hall are confirmed directly with the restaurant.</p>
+          </div>
+
+          <div class="convention__panel reveal">
+            <h3>A place for</h3>
+            <ul class="event-list">
+              <li><span class="icon-dot"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg></span>Conventions</li>
+              <li><span class="icon-dot"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg></span>Programs</li>
+              <li><span class="icon-dot"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg></span>Seminars</li>
+              <li><span class="icon-dot"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg></span>Gatherings</li>
+              <li><span class="icon-dot"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg></span>Celebrations</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY (tiles are built by script.js from the PHOTOS list) -->
+      <section class="section gallery" id="gallery" aria-labelledby="galleryTitle">
+        <div class="container">
+          <div class="section-head">
+            <div class="section-head__text">
+              <h2 class="h2" id="galleryTitle">Gallery</h2>
+              <p class="lead">Photos from Green Lounge. Tap any photo to see it larger.</p>
+            </div>
+          </div>
+          <div class="gallery-filters" id="galleryFilters" role="group" aria-label="Filter photos" hidden></div>
+          <ul class="gallery-grid" id="galleryGrid"></ul>
+        </div>
+      </section>
+
+      <!-- RESERVATIONS -->
+      <section class="section reservations dark" id="reservations" aria-labelledby="reservationsTitle">
+        <div class="container res__grid">
+          <div class="res__text">
+            <h2 class="h2" id="reservationsTitle">Reserve a table</h2>
+            <p class="lead">Send your details and the restaurant will confirm with you on WhatsApp. A request is not a confirmed booking until Green Lounge replies.</p>
+            <ul class="res__info">
+              <li>
+                <span class="info-cell__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg></span>
+                <div><strong>Open every day</strong><span>9:00 AM – 11:00 PM</span></div>
+              </li>
+              <li>
+                <span class="info-cell__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg></span>
+                <div><strong>Prefer to call?</strong><span><a href="tel:+8801919886077">01919-886077</a></span></div>
+              </li>
+              <li>
+                <span class="info-cell__icon"><svg class="icon icon--fill" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg></span>
+                <div><strong>WhatsApp</strong><span><a href="https://wa.me/8801919886077" target="_blank" rel="noopener">+880 1919-886077</a></span></div>
+              </li>
+            </ul>
+          </div>
+
+          <form class="form-card" id="reservationForm" novalidate>
+            <h3>Reservation request</h3>
+            <div class="form-grid">
+              <label class="field col-md-3">
+                <span class="field__label">Name</span>
+                <input id="resName" name="name" type="text" autocomplete="name" required>
+              </label>
+              <label class="field col-md-3">
+                <span class="field__label">Phone</span>
+                <input id="resPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="01XXX-XXXXXX" required>
+              </label>
+              <label class="field col-3 col-md-2">
+                <span class="field__label">Date</span>
+                <input id="resDate" name="date" type="date" required>
+              </label>
+              <label class="field col-3 col-md-2">
+                <span class="field__label">Time</span>
+                <input id="resTime" name="time" type="time" min="09:00" max="23:00" required>
+              </label>
+              <label class="field col-md-2">
+                <span class="field__label">Guests</span>
+                <input id="resGuests" name="guests" type="number" inputmode="numeric" min="1" value="2" required>
+              </label>
+              <label class="field">
+                <span class="field__label">Message <small>(optional)</small></span>
+                <textarea id="resMessage" name="message" rows="3" placeholder="Anything we should know?"></textarea>
+              </label>
+              <div class="form-actions">
+                <p class="form-error" id="resError" role="alert" hidden></p>
+                <button class="btn btn--forest btn--lg btn--block" type="submit">
+                  <svg class="icon icon--fill" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg>
+                  Submit reservation request
+                </button>
+                <p class="fine">This opens WhatsApp with your request filled in. Press send there. Opening hours are 9:00 AM – 11:00 PM.</p>
+                <p class="fine form-privacy">Your information will be used only to process your reservation request. By submitting, you agree to our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+                <p class="form-status" id="resStatus" role="status" hidden></p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- REVIEWS / SOCIAL PROOF -->
+      <section class="section reviews" id="reviews" aria-labelledby="reviewsTitle">
+        <div class="container">
+          <div class="reviews__card">
+            <div class="ring reveal" role="img" aria-label="96 percent of reviewers recommend Green Lounge">
+              <svg viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+                <circle class="ring__track" cx="60" cy="60" r="54"/>
+                <circle class="ring__arc" cx="60" cy="60" r="54"/>
+              </svg>
+              <div class="ring__value"><span>96%</span><small>recommend</small></div>
+            </div>
+            <div class="reviews__text">
+              <h2 class="h2" id="reviewsTitle">96% recommend Green Lounge on Facebook</h2>
+              <p>Based on 16 reviews on the Green Lounge Facebook page. Read what guests wrote there, or follow @greenlounge380 on Instagram.</p>
+              <div class="reviews__links">
+                <a class="btn btn--forest" href="https://www.facebook.com/greenloungechhagalnaiya" target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-facebook"/></svg>
+                  Facebook page
+                </a>
+                <a class="btn btn--outline" href="https://www.instagram.com/greenlounge380/" target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-instagram"/></svg>
+                  @greenlounge380
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT + LOCATION -->
+      <section class="section contact" id="contact" aria-labelledby="contactTitle">
+        <div class="container contact__grid">
+          <div class="contact__info">
+            <h2 class="h2" id="contactTitle">Find Green Lounge</h2>
+            <ul class="contact-list">
+              <li>
+                <span class="info-cell__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg></span>
+                <div>
+                  <p class="contact-list__label">Address</p>
+                  <address class="contact-list__value">Green Lounge Rooftop Restaurant and Convention,<br>Chhagalnaiya, Bangladesh, 3910</address>
+                </div>
+              </li>
+              <li>
+                <span class="info-cell__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg></span>
+                <div>
+                  <p class="contact-list__label">Phone</p>
+                  <p class="contact-list__value"><a href="tel:+8801919886077">01919-886077</a></p>
+                </div>
+              </li>
+              <li>
+                <span class="info-cell__icon"><svg class="icon icon--fill" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg></span>
+                <div>
+                  <p class="contact-list__label">WhatsApp</p>
+                  <p class="contact-list__value"><a href="https://wa.me/8801919886077" target="_blank" rel="noopener">+880 1919-886077</a></p>
+                </div>
+              </li>
+              <li>
+                <span class="info-cell__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg></span>
+                <div>
+                  <p class="contact-list__label">Email</p>
+                  <p class="contact-list__value"><a href="mailto:greenlounge380@gmail.com">greenlounge380@gmail.com</a></p>
+                </div>
+              </li>
+              <li>
+                <span class="info-cell__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-instagram"/></svg></span>
+                <div>
+                  <p class="contact-list__label">Instagram</p>
+                  <p class="contact-list__value"><a href="https://www.instagram.com/greenlounge380/" target="_blank" rel="noopener">@greenlounge380</a></p>
+                </div>
+              </li>
+              <li>
+                <span class="info-cell__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg></span>
+                <div>
+                  <p class="contact-list__label">Opening hours</p>
+                  <p class="contact-list__value">Every day, 9:00 AM – 11:00 PM</p>
+                </div>
+              </li>
+            </ul>
+            <div class="contact__cta">
+              <a class="btn btn--forest" target="_blank" rel="noopener"
+                 href="https://www.google.com/maps/dir/?api=1&amp;destination=Green+Lounge+Rooftop+Restaurant+and+Convention%2C+Chhagalnaiya%2C+Bangladesh%2C+3910">
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-directions"/></svg>
+                Get Directions
+              </a>
+              <a class="btn btn--outline" href="tel:+8801919886077">
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg>
+                Call
+              </a>
+              <a class="btn btn--outline" href="https://wa.me/8801919886077" target="_blank" rel="noopener">
+                <svg class="icon icon--fill" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg>
+                WhatsApp
+              </a>
+              <a class="btn btn--outline" href="https://www.instagram.com/greenlounge380/" target="_blank" rel="noopener">
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-instagram"/></svg>
+                Instagram
+              </a>
+            </div>
+          </div>
+
+          <div class="map">
+            <iframe title="Map showing Green Lounge Rooftop Restaurant and Convention in Chhagalnaiya"
+                    src="https://www.google.com/maps?q=Green+Lounge+Rooftop+Restaurant+and+Convention%2C+Chhagalnaiya%2C+Bangladesh%2C+3910&amp;output=embed"
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- =====================================================
+         MENU VIEW  (shown when the address ends in #menu)
+         ===================================================== -->
+    <div class="menu-view" id="menu" tabindex="-1" hidden>
+      <header class="menu-hero dark">
+        <div class="container">
+          <h1>Our menu</h1>
+          <p>Prices are in Bangladeshi Taka (৳), as printed on the restaurant's current menu. Browse every category, or reserve a table to dine with us.</p>
+        </div>
+      </header>
+
+      <div class="menu-toolbar" id="menuToolbar">
+        <div class="container">
+          <div class="search">
+            <label class="sr-only" for="menuSearch">Search the menu</label>
+            <svg class="icon search__icon" aria-hidden="true" focusable="false"><use href="#i-search"/></svg>
+            <input id="menuSearch" type="search" placeholder="Search dishes, e.g. biryani" autocomplete="off" enterkeyhint="search">
+            <button class="search__clear" id="menuSearchClear" type="button" aria-label="Clear search" hidden>
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"/></svg>
+            </button>
+          </div>
+          <div class="chips" id="menuChips" role="group" aria-label="Menu categories"></div>
+        </div>
+      </div>
+
+      <div class="container menu-layout">
+        <nav class="menu-side" id="menuSide" aria-label="Menu categories"></nav>
+
+        <div class="menu-content">
+          <p class="menu-status" id="menuStatus" role="status" aria-live="polite"></p>
+          <div id="menuList"></div>
+
+          <div class="menu-empty" id="menuEmpty" hidden>
+            <h3>No dishes found</h3>
+            <p>Nothing on the menu matches that search. Try a shorter word, or ask the restaurant on WhatsApp.</p>
+            <div class="menu-empty__actions">
+              <button class="btn btn--forest" type="button" id="menuEmptyReset">Show the full menu</button>
+              <a class="btn btn--outline" href="https://wa.me/8801919886077" target="_blank" rel="noopener">Ask on WhatsApp</a>
+            </div>
+          </div>
+
+          <aside class="menu-notes" aria-label="Notes about the menu">
+            <ul>
+              <li>Prices are shown in Bangladeshi Taka (৳) exactly as printed on the restaurant's current menu.</li>
+              <li>Portions, sizes and labels such as 1:1, 1:3, 4p, 6p, 8p, [winter] and [seasonal] are shown as printed on the menu.</li>
+              <li>Items marked “Price on size” or “MRP” have no fixed price on the menu. Please ask the restaurant for the current price.</li>
+              <li>Item names and descriptions follow the menu's own spelling.</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <a class="brand" href="#home" aria-label="Green Lounge, back to top">
+            <img class="brand__mark" src="images/logo/green-lounge-logo-transparent.png" alt="Green Lounge logo" width="38" height="38" loading="lazy" decoding="async">
+            <span class="brand__text">
+              <span class="brand__name">Green Lounge</span>
+              <span class="brand__sub">Rooftop Restaurant &amp; Convention Hall</span>
+            </span>
+          </a>
+          <address class="site-footer__note">Green Lounge Rooftop Restaurant &amp; Convention Hall<br>Chhagalnaiya, Bangladesh</address>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li>Phone: <a href="tel:+8801919886077">01919-886077</a></li>
+            <li>WhatsApp: <a href="https://wa.me/8801919886077" target="_blank" rel="noopener">+880 1919-886077</a></li>
+            <li>Email: <a href="mailto:greenlounge380@gmail.com">greenlounge380@gmail.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Follow</h3>
+          <ul>
+            <li>Instagram: <a href="https://www.instagram.com/greenlounge380/" target="_blank" rel="noopener">@greenlounge380</a></li>
+            <li>Facebook: <a href="https://www.facebook.com/greenloungechhagalnaiya" target="_blank" rel="noopener">Green Lounge page</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Opening</h3>
+          <ul>
+            <li>Every day</li>
+            <li>9:00 AM – 11:00 PM</li>
+          </ul>
+        </div>
+      </div>
+      <p class="site-footer__bottom">&copy; <span id="year">2026</span> Green Lounge Rooftop Restaurant &amp; Convention Hall. All rights reserved. <span aria-hidden="true">·</span> <a href="privacy-policy.html">Privacy Policy</a></p>
+    </div>
+  </footer>
+
+
+  <!-- =====================================================
+       LIGHTBOX
+       ===================================================== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+    <p class="lightbox__count" id="lbCount"></p>
+    <button class="lightbox__btn lightbox__close" id="lbClose" type="button" aria-label="Close photo">
+      <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"/></svg>
+    </button>
+    <button class="lightbox__btn lightbox__prev" id="lbPrev" type="button" aria-label="Previous photo">
+      <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron"/></svg>
+    </button>
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" id="lbImg" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+      <figcaption class="lightbox__cap" id="lbCap"></figcaption>
+    </figure>
+    <button class="lightbox__btn lightbox__next" id="lbNext" type="button" aria-label="Next photo">
+      <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron"/></svg>
+    </button>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
